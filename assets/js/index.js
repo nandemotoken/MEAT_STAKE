@@ -5,7 +5,7 @@
 //const ContractAddress = "0x09F06a6964A1bcee82BE6C2B00B1f7eDb4D3DcC4";
 
 //mainnet
-const ContractAddress = "0xEB6a88a6cff40bb54E0089c646101812DE41aCF3";
+const ContractAddress = "0x3239DED3bc0e04EA110120449e7F134b050C5d5f";
 
 //matic matic testnet(0) or matic network(1)
 const network = 1;
