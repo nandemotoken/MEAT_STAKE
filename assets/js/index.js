@@ -5,10 +5,10 @@
 //const ContractAddress = "0x09F06a6964A1bcee82BE6C2B00B1f7eDb4D3DcC4";
 
 //mainnet
-const ContractAddress = "0x0Ac77e9826a8184F8CF5Ed852a8E150025948c77";
+const ContractAddress = "0xEB6a88a6cff40bb54E0089c646101812DE41aCF3";
 
 //matic matic testnet(0) or matic network(1)
-const network = 0;
+const network = 1;
 
 //---------------------------------------------
 
@@ -41,7 +41,7 @@ async function loadmm_gasfree(){
         return;
     }
     
-    ans = window.confirm("OKを押すと『NFTアートのスタンプ』がMetaMaskに送信されます")
+    ans = window.confirm("OKを押すとNFTがMetaMaskに送信されます")
     if ( !ans ){
         return;
     }
@@ -52,7 +52,7 @@ async function loadmm_gasfree(){
     const signer = provider.getSigner();
     const add = await signer.getAddress();
 
-    ans2 = await signer.signMessage( "NFTスタンプを受け取ります" );
+    ans2 = await signer.signMessage( "NFTを受け取ります" );
     if ( ans2[1] != "x" ){
         return;
     }
@@ -74,6 +74,6 @@ function explorer(){
 
 function opensea(){
     //window.alert("opensea")
-    ans = window.confirm("OpenSeaでNFTスタンプを確認する\n\n"+ opensealist[network] + "\n\nOpenSeaを開き、MetaMaskを接続しますか？\n(反映には数分時間がかかります。NFTの画像は処理が終わると表示されます)");
+    ans = window.confirm("OpenSeaでNFTを確認する\n\n"+ opensealist[network] + "\n\nOpenSeaを開き、MetaMaskを接続しますか？\n(反映には数分時間がかかります。NFTの画像は処理が終わると表示されます)");
         if(ans){ window.open( opensealist[network] ); }
 }
