@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Meat_Stake</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus+Slab">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: rgb(64,67,72);">
+    <div class="row">
+        <div class="col">
+            <h1 style="text-align: center;font-family: 'Arbutus Slab', serif;color: rgb(49,248,246);font-size: 5vw;"><strong>MEAT</strong>&nbsp;STAKING<br></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div style="text-align: center;"><img src="assets/img/food_niku_katamari_abura.png" style="width: 60%;"></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="wallet-popup">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ウォレットを選択</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center;"><a href="javascript:loadmm_gasfree()">
+                            <p>MetaMask + mint.nandemotoken.com&nbsp;&nbsp;<img src="assets/img/metamask.png" width="30px"></p>
+                        </a></div>
+                </div>
+                <div class="modal-footer">
+                    <p>ウォレットを選択してください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>
+                <h1 style="text-align: center;font-family: 'Arbutus Slab', serif;color: rgb(55,251,248);font-size: 5vw;">You get secret NFT!</h1>
+                <p style="color: rgb(255,255,255);text-align: center;font-size: 2vw;font-family: 'Arbutus Slab', serif;">バーベキューへようこそ！<br>ここではNFTを配布しています</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div style="text-align: center;"><a class="btn btn-dark" role="button" style="color: rgb(55,251,248);margin-bottom: 30px;width: 60%;text-align: center;border: 5px solid rgb(55,251,248);background: rgb(64,67,72);font-size: 3vw;" href="javascript:walletmodal()">🥩無料でNFTを取得して肉を焼く🥩<br></a></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="myinfo">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myinfohead">NFTを発行中…</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <p style="border: 1px solid var(--blue);width: 300px;margin-left: 70px;">ブロックチェーンの確認方法</p><a href="javascript:explorer()"><img src="assets/img/maticexplorer.png" style="width: 200px;"></a><a href="javascript:opensea()" style="margin-left: 30px;"><img src="assets/img/e68241c-opensea-logo-flat-colored-blue.png" style="width: 200px;"></a>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/abi.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
