@@ -31,39 +31,39 @@ function walletmodal(){
 }
 
 
-// async function loadmm_gasfree(){
-//     $('#wallet-popup').modal('hide');
-//     if (typeof web3 == 'undefined'){
-//         ans = window.confirm("metamaskをインストールしてください\nmetamaskのインストール方法を確認しますか？\n\n参考：https://note.com/ocurima/n/n29e1fd7ecbdd");
-//         if (ans){
-//             window.open("https://note.com/ocurima/n/n29e1fd7ecbdd");
-//         }
-//         return;
-//     }
+async function loadmm_gasfree(){
+    $('#wallet-popup').modal('hide');
+    if (typeof web3 == 'undefined'){
+        ans = window.confirm("metamaskをインストールしてください\nmetamaskのインストール方法を確認しますか？\n\n参考：https://note.com/ocurima/n/n29e1fd7ecbdd");
+        if (ans){
+            window.open("https://note.com/ocurima/n/n29e1fd7ecbdd");
+        }
+        return;
+    }
     
-//     ans = window.confirm("OKを押すとNFTがMetaMaskに送信されます")
-//     if ( !ans ){
-//         return;
-//     }
+    ans = window.confirm("OKを押すとNFTがMetaMaskに送信されます")
+    if ( !ans ){
+        return;
+    }
     
     
-//     await window.ethereum.enable();
-//     const provider = new ethers.providers.Web3Provider(window.ethereum);
-//     const signer = provider.getSigner();
-//     const add = await signer.getAddress();
+    await window.ethereum.enable();
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    const add = await signer.getAddress();
 
-//     ans2 = await signer.signMessage( "NFTを受け取ります" );
-//     if ( ans2[1] != "x" ){
-//         return;
-//     }
+    ans2 = await signer.signMessage( "NFTを受け取ります" );
+    if ( ans2[1] != "x" ){
+        return;
+    }
     
     
     
-//     let result = await $.getJSON( mintnandemotokenapilist[network] + ContractAddress + "/"+ add + "/" )
-//     console.log(result);
-//     $('#myinfo').modal('show')
+    let result = await $.getJSON( mintnandemotokenapilist[network] + ContractAddress + "/"+ add + "/" )
+    console.log(result);
+    $('#myinfo').modal('show')
     
-// }
+}
 
 
 async function loadtorus_gasfree(){
